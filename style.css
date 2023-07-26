@@ -7,7 +7,7 @@
   display: flex;
 }
 .container {
-  background: url(BANNER-SECUNDARIO---GEORGE_1500x.webp) no-repeat;
+  background: url(./george.webp) no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
