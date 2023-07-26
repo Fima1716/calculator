@@ -3,9 +3,11 @@
   padding: 0;
   font-family: sans-serif;
 }
+
 .display {
   display: flex;
 }
+
 .container {
   background: url(./george.webp) no-repeat;
   background-size: cover;
@@ -15,17 +17,17 @@
   height: 100vh;
   display: flex;
   align-items: flex-start;
-
   justify-content: center;
+  
 }
 
 .calculator {
   border: 3px solid #000;
   background: pink;
-  margin-left: 35vh;
   box-shadow: -1px 2px 0px;
   padding: 20px;
   border-radius: 40px;
+  
 }
 
 .calculator form input {
@@ -46,7 +48,9 @@ form .display {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
+  overflow: auto;
 }
+
 form .display div {
   border: 3px solid #000;
   text-align: right;
@@ -58,6 +62,7 @@ form .display div {
   height: 150px;
   padding-bottom: -20px;
   text-align: end;
+  text-size-adjust: auto;
 }
 
 form input.equal {
@@ -79,3 +84,49 @@ form input.equal {
   box-shadow: 0 2px 3px #666;
   transform: translateY(4px);
 }
+@media screen and (max-width: 425px) {
+  .calculator {
+    margin-left: 0; /* Убираем отступ слева на мобильных устройствах */
+  }
+
+  form .display div {
+    font-size: 60px; /* Уменьшаем размер шрифта на дисплее на мобильных устройствах */
+  }
+
+  form input {
+    width: 20px; /* Уменьшаем ширину кнопок на мобильных устройствах */
+    height: 20px;
+    font-size: 10px; /* Уменьшаем размер шрифта на кнопках на мобильных устройствах */
+  }
+
+  form input.equal {
+    width: 160px; /* Уменьшаем ширину кнопки "=" на мобильных устройствах */
+  }
+}
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 600px) {
+    .calculator form input {
+        border: 0;
+        outline: 0;
+        width: 50px;
+        height: 30px;
+        border-radius: 100px;
+        box-shadow: -3px 3px;
+        background: white;
+        font-size: 25px;
+        color: grey;
+        cursor: pointer;
+        margin: 5px;
+      }
+      form .display div {
+        border: 3px solid #000;
+        text-align: right;
+        flex: 1;
+        font-size: 60px;
+        background-color: white;
+        box-shadow: none;
+        border-radius: 30px;
+        height: 75px;
+        padding-bottom: -20px;
+        text-align: end;
+      }
