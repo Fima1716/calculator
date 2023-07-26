@@ -84,26 +84,7 @@ form input.equal {
   box-shadow: 0 2px 3px #666;
   transform: translateY(4px);
 }
-@media screen and (max-width: 425px) {
-  .calculator {
-    margin-left: 0; /* Убираем отступ слева на мобильных устройствах */
-  }
 
-  form .display div {
-    font-size: 60px; /* Уменьшаем размер шрифта на дисплее на мобильных устройствах */
-  }
-
-  form input {
-    width: 20px; /* Уменьшаем ширину кнопок на мобильных устройствах */
-    height: 20px;
-    font-size: 10px; /* Уменьшаем размер шрифта на кнопках на мобильных устройствах */
-  }
-
-  form input.equal {
-    width: 160px; /* Уменьшаем ширину кнопки "=" на мобильных устройствах */
-  }
-}
-/* Адаптивные стили для мобильных устройств */
 @media screen and (max-width: 600px) {
     .calculator form input {
         border: 0;
@@ -117,6 +98,7 @@ form input.equal {
         color: grey;
         cursor: pointer;
         margin: 5px;
+        margin: 0 auto
       }
       form .display div {
         border: 3px solid #000;
@@ -131,7 +113,7 @@ form input.equal {
         text-align: end;
       }
       .container {
-        background: url(./george.webp) no-repeat;
+        background: url(./pepe.jpg);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -141,4 +123,8 @@ form input.equal {
         align-items: flex-start;
         justify-content: center;
         
+      }
+       
+      .calculator{
+        margin-bottom: 100px;
       }
