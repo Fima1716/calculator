@@ -130,3 +130,15 @@ form input.equal {
         padding-bottom: -20px;
         text-align: end;
       }
+      .container {
+        background: url(./george.webp) no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+      }
